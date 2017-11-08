@@ -1,0 +1,10 @@
+;  As of 6.1, to print pdf's from server version add getpdfFolders member to server member of ...\studio\config.json in format shown below (spaces and backslashes escaped)
+;  "getpdfFolders": ["C:\\Program\ Files\ (x86)\\Omnis\\OS6.1.1SVR\\omnispdf"]
+
+Calculate iReportHeading as 'Omnis Studio PDF Device'
+
+Begin text block
+Text: {The pdf file you are viewing has been generated using the Omnis Studio report device and displayed either in a new browser window using the javascript $clientcommand 'showpdf'}
+Text: { or in our JavaScript html control using 'assignpdf'.}
+End text block
+Get text block iReportText
